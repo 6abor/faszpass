@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatszivárgás Ellenőrzés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger-menu">
+                <button id="menu-toggle">☰ Menü</button>
+                <div id="menu" class="menu">
+                    <a href="#" data-type="username">Felhasználónév</a>
+                    <a href="#" data-type="email">Email</a>
+                    <a href="#" data-type="phonenumber">Telefonszám</a>
+                    <a href="#" data-type="firstname">Keresztnév</a>
+                    <a href="#" data-type="lastname">Vezetéknév</a>
+                    <a href="#" data-type="fullname">Teljes név</a>
+                    <a href="#" data-type="ipaddress">IP cím</a>
+                    <a href="#" data-type="password">Jelszó</a>
+                    <a href="#" data-type="domain">Domain</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Adatszivárgás Ellenőrzés</h1>
+        <form id="check-form">
+            <input type="text" id="input-value" placeholder="Írd be az ellenőrizendő értéket">
+            <button type="submit">Ellenőrzés</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
