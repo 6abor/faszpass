@@ -1,0 +1,11 @@
+-- database.sql
+CREATE TABLE leaks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type TEXT NOT NULL,
+    value TEXT NOT NULL,
+    other_info TEXT,
+    leak_date TEXT
+);
+
+INSERT INTO leaks (type, value, other_info, leak_date) VALUES ('email', 'example@example.com', 'password123', '2023-01-01');
+INSERT INTO leaks (type, value, other_info, leak_date) VALUES ('username', 'example_user', 'email: example@example.com', '2023-02-01');
